@@ -1,0 +1,37 @@
+Define a Car object using a contructor that has 3 properties
+	- make
+	- model
+	- year - if year is not provided, default to 2018
+	- mileage - mileage is defaulted to 0 and is not passed as a constructor parameter
+
+It also has a drive function that takes a number representing the number of miles to drive.
+	- Calling the drive function with a positive number should increase the mileage property by the given number of miles.
+	- Calling the drive function with a negative, zero or no value will cause it to throw and Error.
+
+download the sample application that Andy published in yesterday's course.
+
+Set up files in your own repository
+	- replace the cow.js with your own car.js file
+	- replace the cow_test.js with your onw car_test.js
+
+	Constructor test:
+
+	Verify that the make you pass in to the Car constructor is stored in the make property.
+	Verify that the model you pass in to the Car constructor is stored in the model property
+	Verify that the year you pass in to the Car constructor is store in the year property.
+	Verify that year is defaulted to 2018 when you don't provide one to the constructor.
+
+	Drive test: 
+
+	Verify that calling drive with at postive number increases mileage value.
+	Verify that calling drive with a negative value throws an error.
+	Verify that calling drive with a zero value throws an Error
+	Verify that calling drive without a value throws an Error.
+
+	Part 2:
+
+	Add a driveForSomeTime function that takes the amount of seconds to drive for and a number representing the speed to drive at in miles per second (yeah I know, that's fast).
+    - If seconds is negative, zero or no value an Error is thrown.
+    - If Miles Per Second is negative, zero or no value an error is thrown.
+
+	The function should increment the mileage by the given amount every second until the given amount of time has elapsed.
